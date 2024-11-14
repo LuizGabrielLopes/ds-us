@@ -1,9 +1,9 @@
-class User {
-    constructor(name, email, password) {
+class Jogador {
+    constructor(impostor, name, equipe) {
         this.id = this.generateId();
         this.name = name;
-        this.email = email;
-        this.password = password;
+        this.impostor = impostor;
+        this.equipe = equipe;
     }
 
     generateId() {
@@ -11,4 +11,4 @@ class User {
     }
 }
 
-export default User;
+export default Jogador;
